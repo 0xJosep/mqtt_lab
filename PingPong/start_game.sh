@@ -1,4 +1,5 @@
 #!/bin/bash
+# BOUKHRISS Youssef - Icho Ibrahim
 # Automated Ping-Pong Game Starter (Bash version)
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

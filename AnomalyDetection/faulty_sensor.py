@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+BOUKHRISS Youssef - Icho Ibrahim
 Faulty Sensor - A sensor that can send erroneous readings
 
 This sensor is used for testing anomaly detection.
@@ -157,7 +158,7 @@ class FaultySensor:
                 
                 self.client.publish(self.publish_topic, payload)
                 
-                marker = "⚠️ FAULTY" if is_faulty else "✓"
+                marker = "FAULTY" if is_faulty else "✓"
                 print(f"[FAULTY {self.sensor_id}] {marker} Published: {value}")
                 
                 time.sleep(self.interval)

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+BOUKHRISS Youssef - Icho Ibrahim
 Automated Ping-Pong Game Starter
 
 This script spawns both ping and pong clients as subprocesses.

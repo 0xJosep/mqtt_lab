@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+BOUKHRISS Youssef - Icho Ibrahim
 Sensor Network Simulation Starter
 
 Automatically starts multiple sensors, averaging agents, and an interface agent.

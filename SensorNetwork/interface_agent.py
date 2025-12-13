@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+BOUKHRISS Youssef - Icho Ibrahim
 Interface Agent - Displays sensor network data
 
 Subscribes to:
@@ -101,7 +102,7 @@ class InterfaceAgent:
                 print("\n  No data received yet. Waiting for sensors...")
             
             for zone in zones:
-                print(f"\n  📍 ZONE: {zone.upper()}")
+                print(f"\n  ZONE: {zone.upper()}")
                 print("  " + "-" * 50)
                 
                 # Collect all measurement types for this zone
@@ -111,13 +112,13 @@ class InterfaceAgent:
                 ))
                 
                 for mtype in types:
-                    print(f"\n    📊 {mtype.capitalize()}")
+                    print(f"\n    {mtype.capitalize()}")
                     
                     # Show average if available
                     if zone in self.averages and mtype in self.averages[zone]:
                         avg, ts, count = self.averages[zone][mtype]
                         age = int(time.time() - ts)
-                        print(f"       ➤ Average: {avg:.2f} ({count} sensors, {age}s ago)")
+                        print(f"       Average: {avg:.2f} ({count} sensors, {age}s ago)")
                     
                     # Show individual sensors
                     if zone in self.sensors and mtype in self.sensors[zone]:

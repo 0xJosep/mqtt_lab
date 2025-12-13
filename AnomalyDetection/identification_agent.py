@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+BOUKHRISS Youssef - Icho Ibrahim
 Identification Agent - Sends reset commands to suspected faulty sensors
 
 Subscribes to: alerts/anomaly
@@ -78,7 +79,7 @@ class IdentificationAgent:
         
         self.last_reset[sensor_id] = now
         
-        print(f"\n[IDENTIFIER] 🔄 RESET COMMAND SENT")
+        print(f"\n[IDENTIFIER] RESET COMMAND SENT")
         print(f"[IDENTIFIER]    Sensor: {sensor_id}")
         print(f"[IDENTIFIER]    Zone: {zone}, Type: {mtype}")
         print(f"[IDENTIFIER]    Topic: {topic}")

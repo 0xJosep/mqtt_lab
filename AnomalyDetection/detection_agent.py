@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+BOUKHRISS Youssef - Icho Ibrahim
 Detection Agent - Monitors sensor readings and detects anomalies
 
 Subscribes to:

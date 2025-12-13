@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+BOUKHRISS Youssef - Icho Ibrahim
 Machine Agent - Contract Net Protocol
 
 Represents a machine that can perform certain job types.

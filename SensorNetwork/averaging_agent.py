@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+BOUKHRISS Youssef - Icho Ibrahim
 Averaging Agent - Collects sensor readings and computes averages
 
 Subscribes to: sensors/<zone>/<measurement_type>/+

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+BOUKHRISS Youssef - Icho Ibrahim
 Supervisor Agent - Contract Net Protocol
 
 Manages job allocation using the Contract Net Protocol:
@@ -149,7 +150,7 @@ class Supervisor:
         }
         
         self.client.publish(self.cfp_topic, json.dumps(cfp))
-        print(f"\n[SUPERVISOR] 📢 CfP sent for {job.job_type} (ID: {job.job_id})")
+        print(f"\n[SUPERVISOR] CfP sent for {job.job_type} (ID: {job.job_id})")
         print(f"[SUPERVISOR] Deadline: {self.deadline}s")
     
     def _select_winner(self) -> Optional[Bid]:
@@ -174,7 +175,7 @@ class Supervisor:
         topic = f"jobs/award/{winner.machine_id}"
         self.client.publish(topic, json.dumps(award))
         
-        print(f"[SUPERVISOR] 🏆 Job awarded to {winner.machine_id} ({winner.proposed_time}s)")
+        print(f"[SUPERVISOR] Job awarded to {winner.machine_id} ({winner.proposed_time}s)")
         
         # Send rejections to other bidders
         with self.bid_lock:
@@ -213,7 +214,7 @@ class Supervisor:
             self._send_award(winner, job)
             self.jobs_allocated += 1
         else:
-            print(f"[SUPERVISOR] ❌ No bids received. Job {job.job_id} failed.")
+            print(f"[SUPERVISOR] No bids received. Job {job.job_id} failed.")
             self.jobs_failed += 1
         
         self.current_job = None

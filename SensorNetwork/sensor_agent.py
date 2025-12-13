@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+BOUKHRISS Youssef - Icho Ibrahim
 Sensor Agent - Simulates a sensor publishing readings via MQTT
 
 Publishes readings on topic: sensors/<zone>/<measurement_type>/<sensor_id>
